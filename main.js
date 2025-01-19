@@ -231,23 +231,6 @@ loader.load(
 );  
 
 
-  loader.load(
-    "three-js-computer/public/Computer-wires.glb",
-    function ( gltf ) {
-      comp = gltf.scene
-      comp.position.set(-.6, 0, 3.6)
-      comp.scale.set(2, 2, 2)
-      scene.add( gltf.scene );
-      gltf.animations; // Array<THREE.AnimationClip>
-		gltf.scene; // THREE.Group
-		gltf.scenes; // Array<THREE.Group>
-		gltf.cameras; // Array<THREE.Camera>
-		gltf.asset; // Object
-    });
-
-
-    
-
 // animate
 
 function animate() {
